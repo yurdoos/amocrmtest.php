@@ -1,5 +1,6 @@
 <?php
-error_reporting(0);
+namespace test;
+defined('LIB_ROOT') or die()
 if($_GET['cmd']=="newlead"){
 
 $id_lead = $_POST['leads']['add'][0]['id'];
