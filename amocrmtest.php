@@ -8,9 +8,9 @@ $user=array(
   'USER_LOGIN'=>'ecoyuriy@gmail.com', 
  'USER_HASH'=>'51df92e8877e255694739b958c0256337858bb20' 
 );
-$subdomain='test'; 
+$subdomain=test9956567; 
 
-$link='https://'.$subdomain.'.amocrm.ru/private/api/auth.php?type=json';
+$link='https://test9956567.amocrm.ru/private/api/auth.php?type=json';
 
 $curl=curl_init();
 curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
@@ -86,11 +86,11 @@ if($code!=200 && $code!=204){
 }
 catch(Exception $E)
 {
-  print('Îřčáęŕ: '.$E->getMessage().PHP_EOL.'Ęîä îřčáęč: '.$E->getCode());
+  print('Ошибка: '.$E->getMessage().PHP_EOL.'Код ошибки: '.$E->getCode());
 }
  
 $Response=json_decode($out,true);
-$Response=$Response['response']; #Response - îáúĺęň ęëŕńńŕ StdClass
+$Response=$Response['response']; #Response - объект класса StdClass
 return $Response;
 }
 
