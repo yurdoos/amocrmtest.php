@@ -86,11 +86,11 @@ if($code!=200 && $code!=204){
 }
 catch(Exception $E)
 {
-  print('Ошибка: '.$E->getMessage().PHP_EOL.'Код ошибки: '.$E->getCode());
+  print('ГЋЕ™ДЌГЎД™Е•: '.$E->getMessage().PHP_EOL.'ДГ®Г¤ Г®Е™ДЌГЎД™ДЌ: '.$E->getCode());
 }
  
 $Response=json_decode($out,true);
-$Response=$Response['response']; #Response - объект класса StdClass
+$Response=$Response['response']; #Response - Г®ГЎГєДєД™Е€ Д™Г«Е•Е„Е„Е• StdClass
 return $Response;
 }
 
